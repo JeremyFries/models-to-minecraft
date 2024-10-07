@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 8.0.31, for Win64 (x86_64)
+--
+-- Host: localhost    Database: blocks
+-- ------------------------------------------------------
+-- Server version	5.7.40-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `rgb`
+--
+
+DROP TABLE IF EXISTS `rgb`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `rgb` (
+  `block_name` varchar(100) DEFAULT NULL,
+  `r` mediumint(9) DEFAULT NULL,
+  `g` mediumint(9) DEFAULT NULL,
+  `b` mediumint(9) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rgb`
+--
+
+LOCK TABLES `rgb` WRITE;
+/*!40000 ALTER TABLE `rgb` DISABLE KEYS */;
+INSERT INTO `rgb` VALUES ('acacia_wood',103,96,86),('acacia_planks',168,90,50),('amethyst_block',133,97,191),('ancient_debris',95,63,55),('andesite',136,136,136),('barrel[facing=east]',107,81,50),('basalt[axis=x]',73,72,77),('beacon',117,220,215),('bedrock',85,85,85),('beehive[facing=north]',180,146,90),('birch_wood',216,215,210),('birch_planks',192,175,121),('black_concrete',8,10,15),('black_glazed_terracotta',67,30,32),('black_terracotta',37,22,16),('black_wool',20,21,25),('blackstone',42,35,40),('blast_furnace_front[facing=south]',107,107,107),('blue_concrete',44,46,143),('blue_glazed_terracotta',47,64,139),('blue_ice',116,167,253),('blue_terracotta',74,59,91),('blue_wool',53,57,157),('bone_block[axis=x]',229,225,207),('brain_coral_block',207,91,159),('bricks',150,97,83),('brown_concrete',96,59,31),('brown_glazed_terracotta',119,106,85),('brown_mushroom_block',149,111,81),('brown_terracotta',77,51,35),('brown_wool',114,71,40),('bubble_coral_block',165,26,162),('budding_amethyst',132,96,186),('calcite',223,224,220),('chain_command_block[facing=south]',132,165,150),('chiseled_deepslate',54,54,54),('chiseled_nether_bricks',47,23,28),('chiseled_polished_blackstone',53,48,56),('chiseled_quartz_block',231,226,218),('chiseled_red_sandstone',183,96,27),('chiseled_sandstone',216,202,155),('chiseled_stone_bricks',119,118,119),('clay',160,166,179),('coal_block',16,15,15),('coal_ore',116,116,116),('coarse_dirt',119,85,59),('cobbled_deepslate',77,77,80),('cobblestone',127,127,127),('command_block[facing=south]',181,136,108),('copper_block',192,107,79),('copper_ore',124,125,120),('cracked_deepslate_bricks',64,64,65),('cracked_deepslate_tiles',52,52,52),('cracked_nether_bricks',40,20,23),('cracked_polished_blackstone_bricks',43,37,43),('cracked_stone_bricks',118,117,118),('crafting_table',129,105,70),('crimson_nylium',107,26,26),('crimson_planks',101,48,70),('crimson_stem[axis=x]',92,25,29),('crimson_stem[axis=z]',107,51,74),('crying_obsidian',32,10,60),('cut_copper',191,106,80),('cut_red_sandstone',189,101,31),('cut_sandstone',217,206,159),('cyan_concrete',21,119,136),('cyan_glazed_terracotta',52,118,125),('cyan_terracotta',86,91,91),('cyan_wool',21,137,145),('dark_oak_wood',60,46,26),('dark_oak_planks',66,43,20),('dark_prismarine',51,91,75),('dead_brain_coral_block',124,117,114),('dead_bubble_coral_block',131,123,119),('dead_fire_coral_block',131,123,119),('dead_horn_coral_block',133,126,122),('dead_tube_coral_block',130,123,119),('deepslate',80,80,82),('deepslate_bricks',70,70,71),('deepslate_coal_ore',74,74,76),('deepslate_copper_ore',92,93,89),('deepslate_diamond_ore',83,106,106),('deepslate_emerald_ore',78,104,87),('deepslate_gold_ore',115,102,78),('deepslate_iron_ore',106,99,94),('deepslate_lapis_ore',79,90,115),('deepslate_redstone_ore',104,73,74),('deepslate_tiles',54,54,55),('diamond_block',98,237,228),('diamond_ore',125,142,141),('diorite',188,188,188),('dirt',134,96,67),('dispenser[facing=south]',122,121,121),('dried_kelp',38,48,29),('dripstone_block',134,107,92),('dropper',122,121,121),('emerald_block',42,203,87),('emerald_ore',117,136,124),('end_stone',219,222,158),('end_stone_bricks',218,224,162),('exposed_copper',161,125,103),('exposed_cut_copper',154,121,101),('fire_coral_block',163,35,46),('fletching_table',173,155,111),('frosted_ice[age=0]',140,181,252),('frosted_ice[age=1]',139,180,252),('frosted_ice[age=2]',138,179,252),('frosted_ice[age=3]',135,178,252),('gilded_blackstone',56,43,38),('glowstone',171,131,84),('gold_block',246,208,61),('gold_ore',143,140,125),('granite',149,103,85),('grass_block',126,107,65),('gray_concrete',54,57,61),('gray_glazed_terracotta',83,90,93),('gray_terracotta',57,42,35),('gray_wool',62,68,71),('green_concrete',73,91,36),('green_glazed_terracotta',117,142,67),('green_terracotta',76,83,42),('green_wool',84,109,27),('hay_block[axis=x]',166,136,38),('honey_block',250,188,57),('honeycomb_block',229,148,29),('horn_coral_block',216,199,66),('ice',145,183,253),('iron_block',220,220,220),('iron_ore',136,130,127),('jukebox',88,58,40),('jungle_wood',85,67,25),('jungle_planks',160,115,80),('lapis_block',30,67,140),('lapis_ore',99,110,132),('light_blue_concrete',35,137,198),('light_blue_glazed_terracotta',94,164,208),('light_blue_terracotta',113,108,137),('light_blue_wool',58,175,217),('light_gray_concrete',125,125,115),('light_gray_glazed_terracotta',144,166,167),('light_gray_terracotta',135,106,97),('light_gray_wool',142,142,134),('lime_concrete',94,168,24),('lime_glazed_terracotta',162,197,55),('lime_terracotta',103,117,52),('lime_wool',112,185,25),('magenta_concrete',169,48,159),('magenta_glazed_terracotta',208,100,191),('magenta_terracotta',149,88,108),('magenta_wool',189,68,179),('mangrove_wood',83,66,41),('mangrove_planks',117,54,48),('melon',114,146,30),('moss_block',89,109,45),('mossy_cobblestone',110,118,94),('mossy_stone_bricks',115,121,105),('mud',60,57,60),('mud_bricks',137,103,79),('muddy_mangrove_roots',68,58,48),('mushroom_stem',203,196,185),('mycelium',113,87,71),('nether_bricks',44,21,26),('nether_gold_ore',115,54,42),('nether_quartz_ore',117,65,62),('nether_wart_block',114,2,2),('netherite_block',66,61,63),('netherrack',97,38,38),('note_block',88,58,40),('oak_wood',109,85,50),('oak_planks',162,130,78),('observer[facing=down]',98,98,98),('observer[facing=east]',70,68,68),('obsidian',15,10,24),('ochre_froglight[axis=x]',245,233,181),('orange_concrete',224,97,0),('orange_glazed_terracotta',154,147,91),('orange_terracotta',161,83,37),('orange_wool',240,118,19),('oxidized_copper',82,162,132),('oxidized_cut_copper',79,153,126),('packed_ice',141,180,250),('packed_mud',142,106,79),('pearlescent_froglight[axis=x]',235,224,228),('pink_concrete',213,101,142),('pink_glazed_terracotta',235,154,181),('pink_terracotta',161,78,78),('pink_wool',237,141,172),('podzol',122,87,57),('polished_andesite',132,134,133),('polished_basalt',88,88,91),('polished_blackstone',53,48,56),('polished_blackstone_bricks',46,41,48),('polished_deepslate',72,72,73),('polished_diorite',192,193,194),('polished_granite',154,106,89),('powder_snow',248,253,253),('prismarine',99,156,151),('prismarine_bricks',99,171,158),('pumpkin',195,114,24),('purple_concrete',100,31,156),('purple_glazed_terracotta',109,48,152),('purple_terracotta',118,70,86),('purple_wool',121,42,172),('purpur_block',169,125,169),('purpur_pillar',171,129,171),('quartz_block',235,229,222),('quartz_bricks',234,229,221),('quartz_pillar',235,230,224),('raw_copper_block',154,105,79),('raw_gold_block',221,169,46),('raw_iron_block',166,135,107),('red_concrete',142,32,32),('red_glazed_terracotta',181,59,53),('red_mushroom_block',200,46,45),('red_mushroom_block[down=false,north=false,east=false,south=false,up=false,west=false]',201,170,120),('red_nether_bricks',69,7,9),('red_sandstone',186,99,29),('red_terracotta',143,61,46),('red_wool',160,39,34),('redstone_block',175,24,5),('redstone_lamp',95,54,30),('redstone_lamp[lit=true]',142,101,60),('redstone_ore',133,107,107),('reinforced_deepslate',102,109,100),('repeating_command_block[facing=south]',129,111,176),('rooted_dirt',144,103,76),('sandstone',216,203,155),('sculk',12,29,36),('sea_lantern',172,199,190),('shroomlight',240,146,70),('slime_block',111,191,91),('smithing_table',56,37,38),('smooth_basalt',72,72,78),('smooth_stone',158,158,158),('snow',249,254,254),('soul_sand',81,62,50),('soul_soil',75,57,46),('sponge',195,192,74),('spruce_planks',114,84,48),('spruce_wood',58,37,16),('stone',125,125,125),('stone_bricks',122,121,122),('stripped_acacia_wood',174,92,59),('stripped_birch_wood',196,176,118),('stripped_crimson_hyphae',137,57,90),('stripped_dark_oak_wood',96,76,49),('stripped_jungle_wood',171,132,84),('stripped_mangrove_wood',70,58,45),('stripped_oak_wood',177,144,86),('stripped_spruce_wood',115,89,52),('stripped_warped_hyphae',57,150,147),('structure_block',88,74,90),('structure_block[mode=corner]',68,57,69),('structure_block[mode=data]',79,65,80),('structure_block[mode=load]',69,57,70),('structure_block[mode=save]',86,71,87),('target',229,176,168),('terracotta',152,94,67),('tnt',182,88,84),('tube_coral_block',49,87,206),('tuff',108,109,102),('verdant_froglight[axis=x]',211,234,208),('warped_nylium',72,61,59),('warped_planks',43,104,99),('warped_hyphae',58,58,77),('warped_wart_block',22,119,121),('weathered_copper',108,153,110),('weathered_cut_copper',109,145,107),('wet_sponge',171,181,70),('white_concrete',207,213,214),('white_glazed_terracotta',188,212,202),('white_terracotta',209,178,161),('white_wool',233,236,236),('yellow_concrete',240,175,21),('yellow_glazed_terracotta',234,192,88),('yellow_terracotta',186,133,35),('yellow_wool',248,197,39);
+/*!40000 ALTER TABLE `rgb` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-10-06 20:02:12
